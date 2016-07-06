@@ -1,0 +1,523 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 12px;
+}
+img{
+	border: none;
+}
+a{
+	text-decoration: none;
+}
+#audio{
+	position: fixed;
+	top: 620px;
+	left: 250px;
+}
+.player{
+	height: 565px;
+	width: 540px;
+	margin: 50px auto;
+}
+.player .play-list{
+	height: 455px;
+	width: 540px;
+	float: left;
+	background: #1B1B1B;
+	color: #999999;
+}
+.player .play-list .play-list-title{
+	height: 50px;
+	width: 540px;
+	background:#1B1B1B;
+	float:left;
+	font-size: 16px;
+	font-weight: bold;
+}
+.player .play-list .play-list-title:hover{
+	background:#000;
+	color: #fff;
+}
+.player .play-list .play-list-title .boFangLieBiao{
+	height: 50px;
+	width: 50%;
+	line-height: 50px;
+	float: left;
+	text-indent: 2em;
+}
+.player .play-list .play-list-title .clear-list{
+	height: 50px;
+	width: 50%;
+	line-height: 50px;
+	float: left;
+	text-indent: 2em;
+}
+.player .play-list ul li:hover{
+	color: #fff;
+}
+.player ul li:hover .operate{
+	display: block;
+}
+.player .play-list .boFang{
+    color: #0CC65B;
+}
+.player .play-list .boFang:hover{
+    color: #0CC65B;
+}
+.player .play-list .geMing{
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	float: left;
+	text-indent: 2em;
+}
+.player .play-list .geChangJia{
+	width: 30%;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	float: left;
+	position: relative;
+}
+.player .play-list .shiJian{
+	width: 20%;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	float: left;
+}
+.player .play-list .operate{
+	height: 15px;
+	width: 150px;
+	padding: 12px 0;
+	position: absolute;
+	left: 0px;
+	top:0;
+	background:#1B1B1B;
+	display: none;
+}
+.player .play-list .operate .delete{
+    height: 15px;
+    width: 11px;
+    float: left;
+    background:url(./image/player_bg.png);
+    background-position: -50px -127px;
+    margin-right: 20px;
+}
+.player .play-list .operate .delete:hover{
+    background:url(./image/player_bg.png);
+    background-position: -50px -145px;
+}
+.player .play-list .operate .add{
+	height: 15px;
+	width: 11px;
+	float: left;
+	background:url(./image/player_bg.png);
+	background-position: -3px -127px;
+	margin-right: 20px;
+}
+.player .play-list .operate .add:hover{
+	background:url(./image/player_bg.png);
+	background-position: -3px -145px;
+}
+.player .play-list .operate .loading{
+	height: 15px;
+	width: 11px;
+	float: left;
+	background:url(./image/player_bg.png);
+	background-position: -35px -127px;
+	margin-right: 20px;
+}
+.player .play-list .operate .loading:hover{
+	height: 15px;
+	width: 11px;
+	float: left;
+	background:url(./image/player_bg.png);
+	background-position: -35px -145px;
+	margin-right: 20px;
+}
+
+
+
+
+
+
+
+.player .mini-play{
+	height: 110px;
+	width: 540px;
+	background: #000;
+	float: left;
+	position: relative;
+}
+.player .mini-play img{
+	display: block;
+	float: left;
+	margin-left: 14px;
+	margin-top: 14px;
+}
+.player .mini-play .mini-play-left{
+	height: 110px;
+	width: 300px;
+	float: left;
+	margin-left: 50px;
+}
+.mini-play-left-list{
+	height: 20px;
+	width: 700px;
+	/*background: red;*/
+	float: left;
+}
+.mini-play-left-listWenZi{
+	width: 90px;
+	height: 20px;
+	float: left;
+	line-height: 20px;
+	color: #756575;
+}
+.geQuMingZi{
+	line-height: 20px;
+	font-size: 14px;
+	color: #fff;
+}
+.yiShuJia{
+	line-height: 20px;
+	color: #aaa;
+	font-size: 10px;
+}
+.mini-play-left-listWenZi:hover{
+	color: #fff;
+}
+.mini-play-left-listTu{
+	height: 20px;
+	width: 50%;
+	float: left;
+	background: url(./image/player_bg.png);
+	background-position: -453px -55px;
+	margin-left: 20px;
+}
+.mini-play-left-listTu1{
+	height: 34px;
+	width: auto;
+	float: left;
+	margin-left: 20px;
+}
+.mini-play-left-listTu1 .mini-play-left-listTu1-gouNeng1{
+	height: 28px;
+	width: 30px;
+	background:url(./image/player_bg.png);
+	background-position: -75px 2px;
+	float: left;
+	margin-right: 5px;
+}
+.mini-play-left-listTu1 .mini-play-left-listTu1-gouNeng1:hover{
+	background:url(./image/player_bg.png);
+	background-position: -75px -30px;
+}
+.mini-play-left-listTu1-gouNeng2{
+	height: 34px;
+	width: 30px;
+	float: left;
+	margin-right: 5px;
+	background:url(./image/player_bg.png);
+	background-position: -111px -5px;
+}
+.mini-play-left-listTu1-gouNeng2:hover{
+	height: 34px;
+	width: 30px;
+	float: left;
+	margin-right: 5px;
+	background:url(./image/player_bg.png);
+	background-position: -111px -47px;
+}
+.zanTingJian{
+	background:url(./image/player_bg.png);
+	background-position: -297px -92px;
+}
+.zanTingJian:hover{
+	background:url(./image/player_bg.png);
+	background-position: -339px -92px;
+}
+.mini-play-left-listTu1-gouNeng3{
+	height: 34px;
+	width: 30px;
+	background:url(./image/player_bg.png);
+	background-position: -154px 2px;
+	float: left;
+	margin-right: 5px;
+}
+.mini-play-left-listTu1-gouNeng3:hover{
+	background:url(./image/player_bg.png);
+	background-position: -154px -30px;
+}
+.mini-play-left-listTu1-gouNeng4{
+	height: 34px;
+	width: 30px;
+	background:url(./image/player_bg.png);
+	background-position: -225px 2px;
+	float: left;
+	margin-right: 5px;
+}
+.mini-play-left-listTu1-gouNeng4:hover{
+	height: 34px;
+	width: 30px;
+	background:url(./image/player_bg.png);
+	background-position: -225px -30px;
+	float: left;
+	margin-right: 5px;
+}
+.danQuXuanHuan{
+	background:url(./image/player_bg.png);
+	background-position: -260px 2px;
+}
+.danQuXuanHuan:hover{
+	background:url(./image/player_bg.png);
+	background-position: -260px -30px;
+}
+.suiJiBoFang{
+	background:url(./image/player_bg.png);
+	background-position: -297px -29px;
+}
+.suiJiBoFang:hover{
+	background:url(./image/player_bg.png);
+	background-position: -297px -57px;
+}
+.shunXuBoFang{
+	background:url(./image/player_bg.png);
+	background-position: -332px -29px;
+}
+.shunXuBoFang:hover{
+	background:url(./image/player_bg.png);
+	background-position: -332px -57px;
+}
+.mini-play-left-listTu1-gouNeng5{
+	height: 34px;
+	width: 30px;
+	background:url(./image/player_bg.png);
+	background-position: -191px 2px;
+	float: left;
+	margin-right: 5px;
+}
+.mini-play-left-listTu1-gouNeng5:hover{
+	background:url(./image/player_bg.png);
+	background-position: -191px -30px;
+}
+.mini-play-left-listTu1 .laba{
+	height: 34px;
+	width: 30px;
+	background:url(./image/player_bg.png);
+	background-position: -154px -58px;
+	float: left;
+	margin-right: 5px;
+}
+.mini-play-left-listTu1 .laba:hover{
+	background:url(./image/player_bg.png);
+	background-position: -191px -58px;
+}
+.mini-play-left-listTu1-gouNeng6{
+	height: 8px;
+	width: 70px;
+	padding: 13px 0;
+	float: left;
+	margin-right: 5px;
+	position: relative;
+}
+.mini-play-left-listTu1-gouNeng6 .yinLiang1{
+	width: 70px;
+    height: 8px;
+	float: left;
+	background:url(./image/player_bg.png) no-repeat;
+	background-position: -293px -12px;
+}
+.mini-play-left-listTu1-gouNeng6 .yinLiang1:hover{
+	background:url(./image/player_bg.png) no-repeat;
+	background-position: -293px -1px;
+}
+.mini-play-left-listTu1-gouNeng6 .yinLiang2{
+	width: 8px;
+    height: 8px;
+	float: left;
+	background:url(./image/player_bg.png) no-repeat;
+	background-position: -365px -1px;
+	position: absolute;
+	left: 50px;
+	right: 0;
+}
+.mini-play-left-listTu1-gouNeng6 .yinLiang2:hover{
+	background:url(./image/player_bg.png) no-repeat;
+	background-position: -365px -17px;
+	position: absolute;
+	left: 50px;
+	right: 0;
+}
+.mini-play-left-listTu1 .mini-play-left-listTu1-gouNeng1{
+	height: 34px;
+	width: 25px;
+}
+.mini-play-left .gouNeng{
+	height: 34px;
+	float: left;
+	background:url(./image/player_bg.png);
+	background-position: -453px -55px;
+}
+.xunHuan{
+	height: 136px;
+	width: 30px;
+	border-radius: 4px;
+	position: absolute;
+	left: 341px;
+    top: -62px;
+    background: black;
+    display:none;
+}
+.xunHuanBox{
+	height: 34px;
+	width: 30px;
+	float: left;
+	background:yellow;
+}
+.xunHuanBox4{
+	background:url(./image/player_bg.png);
+	background-position: -224px 2px;
+}
+.xunHuanBox4:hover{
+	background:url(./image/player_bg.png);
+	background-position: -224px -30px;
+}
+.xunHuanBox3{
+	background:url(./image/player_bg.png);
+	background-position: -259px 2px;
+}
+.xunHuanBox3:hover{
+	background:url(./image/player_bg.png);
+	background-position: -259px -30px;
+}
+.xunHuanBox2{
+	background:url(./image/player_bg.png);
+	background-position: -294px -30px;
+}
+.xunHuanBox2:hover{
+	background:url(./image/player_bg.png);
+	background-position: -294px -58px;
+}
+.xunHuanBox1{
+	background:url(./image/player_bg.png);
+	background-position: -330px -30px;
+}
+.xunHuanBox1:hover{
+	background:url(./image/player_bg.png);
+	background-position: -330px -58px;
+}
+
+.geQuTiao{
+	height: 8px;
+	width: 540px;
+	background: #8D8D8D;
+	float: left;
+	margin-top: -15px;
+	position: relative;
+}
+.geQuJinDu{
+	height: 8px;
+	width: 250px;
+	float: left;
+	background:#D1D1D1; 
+	position: absolute;
+	left: 0;
+}
+.ziDian{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #d1d1d1;
+    position: absolute;
+    left: -8px;
+    top: -4px;
+}
+.tips{
+    width: 40px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    position: relative;
+    left: 200px;
+    bottom: 20px;
+    z-index: 20;
+    display: none;
+    background: #6F6F6F;
+     border: 1px solid #fff;
+}
+.boFangShiJian{
+	width: 40px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    background: #6F6F6F;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 20;
+    border-radius: 2px;
+    color: #fff;
+}
+.sanJiao{
+	height: 8px;
+	width: 8px;
+	background: #6F6F6F;
+	float: left;
+	position: absolute;
+	left: 17px;
+	bottom: -5px;
+	transform:rotate(45deg);
+	border: 1px solid #fff;
+	z-index: 10;
+}
+.zheZhao{
+	height: 1px;
+	width: 12px;
+	background: #6F6F6F;
+	position: absolute;
+	left: 16px;
+	bottom: 0px;
+	z-index: 21;
+	border-radius: 1px;
+}
+.mini-play-right{
+	height: 28px;
+	width: 99px;
+	float: right;
+}
+.mini-play-right .mini-play-right-navBar{
+	height: 28px;
+	width: 24px;
+	background:url(./image/player_bg.png) no-repeat;
+	background-position: -221px -97px;
+	float: left;
+	margin-right: 9px;
+}
+.mini-play-right .mini-play-right-musicNum{
+	height: 28px;
+	width: 24px;
+	background:url(./image/player_bg.png) no-repeat;
+	background-position: -244px -97px;
+	float: left;
+	margin-right: 9px;
+	color: #fff;
+	line-height: 28px;
+	text-align: center;
+}
+.mini-play-right .mini-play-right-musicWords{
+	height: 28px;
+	width: 24px;
+	background:url(./image/player_bg.png) no-repeat;
+	background-position: -451px 7px;
+	float: left;
+	margin-right: 9px;
+}
+.mini-play-right .musicWordsing{
+	background:url(./image/player_bg.png) no-repeat;
+	background-position: -474px 7px;
+}
